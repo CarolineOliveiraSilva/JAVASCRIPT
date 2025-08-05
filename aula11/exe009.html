@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body{
+            background-color: gray;
+            color: white;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Estrangeiro ou Brasileiro </h1>
+    <input type="text" name="paistx" id="paistx" placeholder="Onde você nasceu?">
+    <input type="button" value="Enviar" onclick="Enviar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function Enviar() {
+            var pais= document.querySelector('input#paistx')
+            var res = document.querySelector('div#res')
+            var a = pais.value
+            res.innerHTML= `Voce nasceu em ${a}`
+            if( a=== 'brasil') {
+                res.innerHTML+=`<p>Voce é Brasileiro </P>`
+
+            }else{
+            res.innerHTML += `<p> Você é Estrangeiro! </p> `
+        }
+    }
+    </script>
+    
+</body>
+</html>
