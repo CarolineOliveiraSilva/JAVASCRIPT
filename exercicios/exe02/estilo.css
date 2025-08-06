@@ -1,5 +1,5 @@
 body{
-        background: rgb(78, 78, 201);
+        background: rgb(128, 128, 194);
         font:normal 15pt arial  ;
 }
 header{
@@ -18,6 +18,15 @@ section{
     
 
 }
+button {
+            padding: 8px 16px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        #res {
+            margin-top: 20px;
+            font-size: 18px;
+        }
 
 footer{
     color: white;
